@@ -1,0 +1,99 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <!--  -->
+
+    <div class="row">
+        <div class="column left">
+            <br>
+            <img src="{% static 'myapp/images/profile.jpg' %}" alt="Avatar"
+                style="width:200px;height:200px;border-radius: 50%;">
+            <br><br>
+            <div>
+                &emsp;&emsp;
+                <a href="#">
+                    <i class="fa fa-github" style="font-size:32px;color:black;"></i>
+                </a>
+                &emsp;
+                <a href="#">
+                    <i class="fa fa-twitter" style="font-size:32px;color:rgb(86, 185, 224)"></i>
+                </a>
+                &emsp;
+                <a href="#">
+                    <i class="fa fa-facebook" style="font-size:32px;color: blue;"></i>
+                </a>
+            </div>
+        </div>
+        <div class="column">
+
+            <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+                <div class="w-100">
+                    <h1 class="mb-0">Computational
+                        <span class="text-primary">Mathematics</span>
+                    </h1>
+                    <div class="subheading mb-5">UBU
+                        <a href="">sarot.bu.60@ubu.ac.th</a>
+                    </div>
+                    <h3> 60114440334 Sarot Butratthep (ตั้ง)</h3>
+                    <p class="lead mb-5">I am study Computer Science at UBU.</p>
+                    <!-- <div>
+                        <a href="#">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <br><br><br>
+    <!-- <h2>Responsive Two Column Layout</h2>
+    <p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of
+        floating next to each other, when the screen is less than 600px wide).</p> -->
+
+    <br><br><br>
+    <div class="rowcard">
+        <a href="/differentiation">
+            <div class="columncard">
+                <div class="card" style="color:white;">
+                    <h2>Differentiation</h2>
+                    <p></p>
+                    <p>( Click )</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="/integration">
+            <div class="columncard" style="color:white;">
+                <div class="card">
+                    <h2>Integration</h2>
+                    <p></p>
+                    <p>( Click )</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="/rootfinding">
+            <div class="columncard">
+                <div class="card" style="color: white;">
+                    <h2>Rootfinding</h2>
+                    <p></p>
+                    <p>( Click )</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+    <!--  -->
+</div>
+
+{% endblock %}
